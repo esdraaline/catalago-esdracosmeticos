@@ -1344,6 +1344,33 @@
   const busca = document.getElementById('cli-busca');
   const cards = document.querySelectorAll('.cli-card');
   const vazio = document.getElementById('cli-vazio');
+  const ordemDestaques = [
+    'Linda Irresistível',
+    'La Victorie EDP',
+    'Glamour Myriad',
+    'Luna Viva',
+    'Sensual Velvet Hidratante'
+  ];
+
+  function reposicionarDestaques() {
+    const grade = document.getElementById('cli-grade');
+    if (!grade) return;
+    const ref = grade.querySelector('.cli-card--esgotado');
+    if (!ref) return;
+
+    ordemDestaques.forEach(nome => {
+      const card = Array.from(grade.querySelectorAll('.cli-card')).find(el => {
+        const titulo = el.querySelector('.cli-nome');
+        return titulo && titulo.textContent.trim() === nome;
+      });
+      if (card && card.parentElement === grade) {
+        grade.insertBefore(card, ref);
+      }
+    });
+  }
+
+  reposicionarDestaques();
+
   busca.addEventListener('input', () => {
     const t = busca.value.trim().toLowerCase();
     let v = 0;
