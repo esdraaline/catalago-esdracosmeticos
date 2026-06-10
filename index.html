@@ -24,31 +24,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Inter',system-ui,sans-serif;background:#FAF6F0;color:#2A2025;line-height:1.5;-webkit-font-smoothing:antialiased}
-  .cli-capa{background:linear-gradient(135deg,#8B0046,#C9184A);color:white;padding:3rem 1.5rem 2.5rem;text-align:center;position:relative;overflow:hidden}
+  :root{--primaria:#8B0046;--primaria-escura:#5C002F;--acento-quente:#C9184A;--dourado:#C9A66B;--fundo-pagina:#FAF6F0;--fundo-foto:#F5EFEA;--texto-principal:#2A2025;--texto-sec:#6B5C63;--borda:#E5DAC8}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--fundo-pagina);color:var(--texto-principal);line-height:1.5;-webkit-font-smoothing:antialiased}
+  .cli-capa{background:linear-gradient(135deg,rgba(139,0,70,0.82) 0%,rgba(201,24,74,0.75) 100%),url('capa-namorados.jpg') center/cover no-repeat;color:white;padding:3rem 1.5rem 2.5rem;text-align:center;position:relative;overflow:hidden;min-height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center}
   .cli-capa::before{content:'';position:absolute;top:-50%;right:-20%;width:400px;height:400px;background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%);border-radius:50%}
   .cli-marca-loja{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:600;letter-spacing:0.02em;margin-bottom:0.3rem}
   .cli-tagline{font-size:0.85rem;letter-spacing:0.25em;text-transform:uppercase;opacity:0.85;margin-bottom:1.5rem}
   .cli-stats{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;font-size:0.85rem;opacity:0.95}
   .cli-stats span{padding:0.4rem 0.9rem;background:rgba(255,255,255,0.15);border-radius:999px;backdrop-filter:blur(8px)}
-  .cli-busca-wrap{position:sticky;top:0;background:rgba(250,246,240,0.95);backdrop-filter:blur(8px);padding:0.85rem 1rem;border-bottom:1px solid #E5DAC8;z-index:50}
+  .cli-busca-wrap{position:sticky;top:0;background:rgba(250,246,240,0.95);backdrop-filter:blur(8px);padding:0.85rem 1rem;border-bottom:1px solid var(--borda);z-index:50}
   .cli-busca{max-width:560px;margin:0 auto;width:100%;padding:0.6rem 1rem 0.6rem 2.4rem;border:1px solid #D4C4B0;border-radius:999px;background:white url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%236B5C63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>') 0.85rem center/16px no-repeat;font-family:inherit;font-size:0.9rem;display:block}
-  .cli-busca:focus{outline:none;border-color:#8B0046;box-shadow:0 0 0 3px rgba(139,0,70,0.1)}
+  .cli-busca:focus{outline:none;border-color:var(--primaria);box-shadow:0 0 0 3px rgba(139,0,70,0.1)}
   .cli-grade{max-width:1280px;margin:0 auto;padding:1.5rem 1rem 4rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
-  .cli-card{background:white;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(92,0,47,0.06),0 6px 20px rgba(92,0,47,0.06);transition:all 0.2s;display:flex;flex-direction:column;position:relative}
-  .cli-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(92,0,47,0.1),0 12px 32px rgba(92,0,47,0.12)}
+  .cli-card{background:white;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(92,0,47,0.06),0 6px 20px rgba(92,0,47,0.07);transition:all 0.2s;display:flex;flex-direction:column;position:relative}
+  .cli-card:hover{transform:translateY(-3px);box-shadow:0 4px 14px rgba(92,0,47,0.12),0 14px 36px rgba(92,0,47,0.13)}
   .cli-card.oculto{display:none}
   .cli-card--maes{background:linear-gradient(180deg,#FFF8FA,white)}
   .cli-selo{position:absolute;top:0.6rem;left:0.6rem;background:linear-gradient(135deg,#C9184A,#FF4D6D);color:white;font-size:0.65rem;font-weight:700;letter-spacing:0.04em;padding:4px 9px;border-radius:999px;z-index:5;box-shadow:0 2px 6px rgba(201,24,74,0.3)}
-  .cli-foto,.cli-carrossel{aspect-ratio:1/1;background:#F2EBE0;display:flex;align-items:center;justify-content:center;padding:1rem;position:relative;overflow:hidden}
-  .cli-foto img,.cli-slide{max-width:100%;max-height:100%;object-fit:contain}
+  .cli-foto,.cli-carrossel{aspect-ratio:1/1;background:var(--fundo-foto);position:relative;overflow:hidden}
+  .cli-foto img,.cli-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:0.85rem}
   .cli-info{padding:1rem 1rem 1.1rem;display:flex;flex-direction:column;gap:0.5rem;flex:1}
-  .cli-marca{font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:#C9A66B;font-weight:600}
-  .cli-nome{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:#2A2025;line-height:1.2;margin:0}
-  .cli-desc{font-size:0.82rem;color:#6B5C63;line-height:1.45}
+  .cli-marca{font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--dourado);font-weight:600}
+  .cli-nome{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:var(--texto-principal);line-height:1.25;margin:0}
+  .cli-desc{font-size:0.82rem;color:var(--texto-sec);line-height:1.45}
   .cli-precos{display:flex;align-items:baseline;gap:0.5rem;margin-top:auto;padding-top:0.4rem}
   .cli-preco-cheio{font-size:0.85rem;color:#999;text-decoration:line-through}
-  .cli-preco{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:#8B0046;font-variant-numeric:tabular-nums}
+  .cli-preco{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:700;color:var(--primaria);font-variant-numeric:tabular-nums}
   .cli-status{display:inline-flex;align-items:center;gap:0.3rem;font-size:0.72rem;font-weight:600;padding:3px 9px;border-radius:999px;align-self:flex-start}
   .cli-status--pronta{background:#E8F5E9;color:#1B5E20}
   .cli-status--encomenda{background:#FFF4E6;color:#8A5A00}
@@ -56,20 +57,16 @@
   .cli-card--esgotado{opacity:0.6;filter:grayscale(40%)}
   .cli-preco--esgotado{color:#999;text-decoration:line-through}
   .cli-selo-esgotado{position:absolute;top:0.6rem;right:0.6rem;background:#444;color:white;font-size:0.62rem;font-weight:800;letter-spacing:0.1em;padding:4px 9px;border-radius:999px;z-index:5}
-  .cli-btn{display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.7rem;margin-top:0.5rem;background:#25D366;color:white;text-decoration:none;border-radius:6px;font-weight:600;font-size:0.9rem;transition:all 0.15s;box-shadow:0 2px 6px rgba(37,211,102,0.25)}
+  .cli-btn{display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.7rem;margin-top:0.5rem;background:#25D366;color:white;text-decoration:none;border-radius:7px;font-weight:600;font-size:0.9rem;transition:all 0.15s;box-shadow:0 2px 6px rgba(37,211,102,0.25)}
   .cli-btn:hover{background:#1FB959;transform:translateY(-1px);box-shadow:0 4px 12px rgba(37,211,102,0.35)}
-  .cli-vazio{grid-column:1/-1;text-align:center;padding:3rem 1rem;color:#6B5C63;font-style:italic}
-  .cli-rodape{background:#5C002F;color:white;padding:2.5rem 1.5rem;text-align:center}
+  .cli-vazio{grid-column:1/-1;text-align:center;padding:3rem 1rem;color:var(--texto-sec);font-style:italic}
+  .cli-rodape{background:var(--primaria-escura);color:white;padding:2.5rem 1.5rem;text-align:center}
   .cli-rodape h2{font-family:'Cormorant Garamond',serif;font-size:1.6rem;margin-bottom:0.4rem;font-weight:500}
   .cli-rodape p{font-size:0.85rem;opacity:0.85;margin-bottom:1.2rem}
   .cli-rodape-btn{display:inline-flex;align-items:center;gap:0.5rem;background:#25D366;color:white;text-decoration:none;padding:0.8rem 1.6rem;border-radius:999px;font-weight:600;font-size:0.95rem;transition:transform 0.15s}
   .cli-rodape-btn:hover{transform:translateY(-2px)}
   .cli-rodape-meta{margin-top:1.5rem;font-size:0.7rem;opacity:0.6;letter-spacing:0.05em}
-  @media(max-width:600px){
-    .cli-grade{grid-template-columns:1fr;gap:1rem;padding:1rem}
-    .cli-marca-loja{font-size:2rem}
-    .cli-capa{padding:2rem 1rem 1.8rem}
-  }
+  @media(max-width:600px){.cli-grade{grid-template-columns:repeat(2,1fr);gap:0.65rem;padding:0.75rem 0.65rem 3rem}.cli-nome{font-size:0.95rem}.cli-desc{font-size:0.75rem}.cli-preco{font-size:1.25rem}.cli-btn{font-size:0.78rem;padding:0.55rem 0.5rem}.cli-info{gap:0.35rem;padding:0.65rem 0.65rem 0.75rem}.cli-marca-loja{font-size:1.85rem}.cli-capa{padding:2rem 1rem 1.8rem}}
 </style>
 </head>
 <body>
