@@ -1,3 +1,14 @@
+## Contexto do projeto
+- Catálogo de campanhas da Esdra Cosméticos (kits de presente enviados pelo WhatsApp), HTML+CSS+JS puro, sem build, no GitHub Pages: https://esdraaline.github.io/catalago-esdracosmeticos/
+- Repositório PÚBLICO (conta esdraaline). Nada de planilha, foto bruta ou dado de cliente.
+- Dados separados da apresentação: a campanha publicada é `campanhas/atual.js` (`window.CAMPANHA`); `js/catalogo.js` e `css/catalogo.css` montam a página. Não escreva cards no HTML.
+- Sem kits, `ativa:false` ou data `fim` vencida = modo neutro (página-ponte para a loja e o WhatsApp). Campanhas antigas ficam em `campanhas/AAAA-MM-nome.js`; prévia: `index.html?campanha=AAAA-MM-nome`.
+- Todo kit tem `genero` ('F', 'M' ou 'U') e `id` com o sufixo igual (N1F, N2M). Esgotado: `status:'esgotado'` (o JS joga para o fim e troca o botão por "Avisar quando chegar").
+- Imagem sempre como arquivo em `img/` (minúsculas, sem acento, `tipo-produto-marca.jpg`), NUNCA base64 no HTML.
+- A cada campanha, no `index.html` só muda o bloco "PRÉVIA DO WHATSAPP" do `<head>` (og:/twitter:, com width/height reais da imagem).
+- Nunca `git add .`. Use: `git add img/ campanhas/ index.html js/ css/ README.md`, commit e `git push origin main` (Pages publica em 1 a 2 min).
+- Passo a passo completo no README.md. Fotos novas: skill `foto-catalogo`; publicação: skill `publicar-site`.
+
 <!-- PROJECT-MENTOR:START v1 -->
 ## Mentor de Projetos (protocolo v1)
 

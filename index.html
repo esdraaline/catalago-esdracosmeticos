@@ -1,572 +1,63 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Catálogo Dia dos Namorados 💕 — Esdra Cosméticos</title>
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#8B0046">
 
-<!-- Open Graph / WhatsApp Preview -->
+<!-- ================================================================
+     PRÉVIA DO WHATSAPP: INÍCIO
+     Este é o ÚNICO trecho do HTML que muda a cada campanha.
+     O robô do WhatsApp não roda JavaScript: ele lê só estas linhas.
+     Troque título, descrição, imagem e o tamanho REAL da imagem
+     (largura x altura em pixels). Modo neutro: deixe como está abaixo.
+     Passo a passo no README.md.
+     ================================================================ -->
+<title>Kits de presente | Esdra Cosméticos</title>
+<meta name="description" content="Kits de presente da Esdra Cosméticos, em Valparaíso/SP. Nova campanha em breve. Veja a loja online ou peça pelo WhatsApp.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://esdraaline.github.io/catalago-esdracosmeticos/">
-<meta property="og:title" content="Catálogo Dia dos Namorados 💕 — Esdra Cosméticos">
-<meta property="og:description" content="Presentes especiais para o Dia dos Namorados! inúmeros kits selecionados. Surpreenda quem você ama. 💕">
-<meta property="og:image" content="https://esdraaline.github.io/catalago-esdracosmeticos/capa-namorados.jpg">
+<meta property="og:site_name" content="Esdra Cosméticos">
+<meta property="og:title" content="Kits de presente | Esdra Cosméticos">
+<meta property="og:description" content="Nova campanha em breve. Enquanto isso, veja a loja online ou peça pelo WhatsApp.">
+<meta property="og:image" content="https://esdraaline.github.io/catalago-esdracosmeticos/img/og-esdra-kits.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:site_name" content="Esdra Cosméticos">
+<meta property="og:image:alt" content="Esdra Cosméticos, kits de presente">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Catálogo Dia dos Namorados 💕 — Esdra Cosméticos">
-<meta name="twitter:description" content="Presentes especiais para o Dia dos Namorados! inúmeros kits selecionados. Surpreenda quem você ama. 💕">
-<meta name="twitter:image" content="https://esdraaline.github.io/catalago-esdracosmeticos/capa-namorados.jpg">
+<meta name="twitter:title" content="Kits de presente | Esdra Cosméticos">
+<meta name="twitter:description" content="Nova campanha em breve. Enquanto isso, veja a loja online ou peça pelo WhatsApp.">
+<meta name="twitter:image" content="https://esdraaline.github.io/catalago-esdracosmeticos/img/og-esdra-kits.jpg">
+<!-- PRÉVIA DO WHATSAPP: FIM ========================================= -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  *{box-sizing:border-box;margin:0;padding:0}
-  :root{--primaria:#8B0046;--primaria-escura:#5C002F;--acento-quente:#C9184A;--dourado:#C9A66B;--fundo-pagina:#FAF6F0;--fundo-foto:#F5EFEA;--texto-principal:#2A2025;--texto-sec:#6B5C63;--borda:#E5DAC8}
-  body{font-family:'Inter',system-ui,sans-serif;background:var(--fundo-pagina);color:var(--texto-principal);line-height:1.5;-webkit-font-smoothing:antialiased}
-  .cli-capa{background:linear-gradient(135deg,rgba(139,0,70,0.82) 0%,rgba(201,24,74,0.75) 100%),url('capa-namorados.jpg') center/cover no-repeat;color:white;padding:3rem 1.5rem 2.5rem;text-align:center;position:relative;overflow:hidden;min-height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center}
-  .cli-capa::before{content:'';position:absolute;top:-50%;right:-20%;width:400px;height:400px;background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%);border-radius:50%}
-  .cli-marca-loja{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:600;letter-spacing:0.02em;margin-bottom:0.3rem}
-  .cli-tagline{font-size:0.85rem;letter-spacing:0.25em;text-transform:uppercase;opacity:0.85;margin-bottom:1.5rem}
-  .cli-stats{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;font-size:0.85rem;opacity:0.95}
-  .cli-stats span{padding:0.4rem 0.9rem;background:rgba(255,255,255,0.15);border-radius:999px;backdrop-filter:blur(8px)}
-  .cli-busca-wrap{position:sticky;top:0;background:rgba(250,246,240,0.95);backdrop-filter:blur(8px);padding:0.85rem 1rem;border-bottom:1px solid var(--borda);z-index:50}
-  .cli-busca{max-width:560px;margin:0 auto;width:100%;padding:0.6rem 1rem 0.6rem 2.4rem;border:1px solid #D4C4B0;border-radius:999px;background:white url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%236B5C63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>') 0.85rem center/16px no-repeat;font-family:inherit;font-size:0.9rem;display:block}
-  .cli-busca:focus{outline:none;border-color:var(--primaria);box-shadow:0 0 0 3px rgba(139,0,70,0.1)}
-  .cli-grade{max-width:1280px;margin:0 auto;padding:1.5rem 1rem 4rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
-  .cli-card{background:white;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(92,0,47,0.06),0 6px 20px rgba(92,0,47,0.07);transition:all 0.2s;display:flex;flex-direction:column;position:relative}
-  .cli-card:hover{transform:translateY(-3px);box-shadow:0 4px 14px rgba(92,0,47,0.12),0 14px 36px rgba(92,0,47,0.13)}
-  .cli-card.oculto{display:none}
-  .cli-card--maes{background:linear-gradient(180deg,#FFF8FA,white)}
-  .cli-selo{position:absolute;top:0.6rem;left:0.6rem;background:linear-gradient(135deg,#C9184A,#FF4D6D);color:white;font-size:0.65rem;font-weight:700;letter-spacing:0.04em;padding:4px 9px;border-radius:999px;z-index:5;box-shadow:0 2px 6px rgba(201,24,74,0.3)}
-  .cli-num{position:absolute;bottom:0.5rem;right:0.5rem;background:rgba(139,0,70,0.82);color:white;font-family:'Inter',sans-serif;font-size:0.6rem;font-weight:700;letter-spacing:0.06em;padding:3px 8px;border-radius:999px;z-index:6;backdrop-filter:blur(4px)}
-  .cli-foto,.cli-carrossel{aspect-ratio:1/1;background:var(--fundo-foto);position:relative;overflow:hidden}
-  .cli-foto img,.cli-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:0.85rem}
-  .cli-info{padding:1rem 1rem 1.1rem;display:flex;flex-direction:column;gap:0.5rem;flex:1}
-  .cli-marca{font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--dourado);font-weight:600}
-  .cli-nome{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:var(--texto-principal);line-height:1.25;margin:0}
-  .cli-desc{font-size:0.82rem;color:var(--texto-sec);line-height:1.45}
-  .cli-precos{display:flex;align-items:baseline;gap:0.5rem;margin-top:auto;padding-top:0.4rem}
-  .cli-preco-cheio{font-size:0.85rem;color:#999;text-decoration:line-through}
-  .cli-preco{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:700;color:var(--primaria);font-variant-numeric:tabular-nums}
-  .cli-status{display:inline-flex;align-items:center;gap:0.3rem;font-size:0.72rem;font-weight:600;padding:3px 9px;border-radius:999px;align-self:flex-start}
-  .cli-status--pronta{background:#E8F5E9;color:#1B5E20}
-  .cli-status--encomenda{background:#FFF4E6;color:#8A5A00}
-  .cli-status--esgotado{background:#F0F0F0;color:#666}
-  .cli-card--esgotado{opacity:0.6;filter:grayscale(40%)}
-  .cli-preco--esgotado{color:#999;text-decoration:line-through}
-  .cli-selo-esgotado{position:absolute;top:0.6rem;right:0.6rem;background:#444;color:white;font-size:0.62rem;font-weight:800;letter-spacing:0.1em;padding:4px 9px;border-radius:999px;z-index:5}
-  .cli-btn{display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.7rem;margin-top:0.5rem;background:#25D366;color:white;text-decoration:none;border-radius:7px;font-weight:600;font-size:0.9rem;transition:all 0.15s;box-shadow:0 2px 6px rgba(37,211,102,0.25)}
-  .cli-btn:hover{background:#1FB959;transform:translateY(-1px);box-shadow:0 4px 12px rgba(37,211,102,0.35)}
-  .cli-vazio{grid-column:1/-1;text-align:center;padding:3rem 1rem;color:var(--texto-sec);font-style:italic}
-  .cli-rodape{background:var(--primaria-escura);color:white;padding:2.5rem 1.5rem;text-align:center}
-  .cli-rodape h2{font-family:'Cormorant Garamond',serif;font-size:1.6rem;margin-bottom:0.4rem;font-weight:500}
-  .cli-rodape p{font-size:0.85rem;opacity:0.85;margin-bottom:1.2rem}
-  .cli-rodape-btn{display:inline-flex;align-items:center;gap:0.5rem;background:#25D366;color:white;text-decoration:none;padding:0.8rem 1.6rem;border-radius:999px;font-weight:600;font-size:0.95rem;transition:transform 0.15s}
-  .cli-rodape-btn:hover{transform:translateY(-2px)}
-  .cli-rodape-meta{margin-top:1.5rem;font-size:0.7rem;opacity:0.6;letter-spacing:0.05em}
-  @media(max-width:600px){.cli-grade{grid-template-columns:repeat(2,1fr);gap:0.65rem;padding:0.75rem 0.65rem 3rem}.cli-nome{font-size:0.95rem}.cli-desc{font-size:0.75rem}.cli-preco{font-size:1.25rem}.cli-btn{font-size:0.78rem;padding:0.55rem 0.5rem}.cli-info{gap:0.35rem;padding:0.65rem 0.65rem 0.75rem}.cli-marca-loja{font-size:1.85rem}.cli-capa{padding:2rem 1rem 1.8rem}}
-
-  /* Filtros de genero | M = Produto Masculino | F = Produto Feminino */
-  .cli-filtros{display:flex;gap:0.5rem;justify-content:center;margin-top:0.5rem;flex-wrap:wrap}
-  .cli-filtro{padding:0.35rem 1rem;border-radius:999px;border:1.5px solid var(--borda);background:white;color:var(--texto-sec);font-family:inherit;font-size:0.82rem;font-weight:500;cursor:pointer;transition:all 0.15s}
-  .cli-filtro:hover{border-color:var(--primaria);color:var(--primaria)}
-  .cli-filtro--ativo{background:var(--primaria);color:white;border-color:var(--primaria)}
-  @media(max-width:600px){.cli-filtros{gap:0.4rem}.cli-filtro{font-size:0.75rem;padding:0.3rem 0.8rem}}
-</style>
+<link rel="stylesheet" href="css/catalogo.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%238B0046'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' font-weight='700' fill='white' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-  <header class="cli-capa">
-    <h1 class="cli-marca-loja">Esdra Cosméticos</h1>
-    <div class="cli-tagline">Surpreenda quem você ama 💕</div>
-    <div class="cli-stats">
-      <span>21 produtos</span>
-      <span>💕 21 kits Namorados</span>
-      <span>Atendimento via WhatsApp</span>
-    </div>
-  </header>
-
-  <div class="cli-busca-wrap">
-    <input type="text" class="cli-busca" id="cli-busca" placeholder="Buscar produto, marca…" autocomplete="off">
-    <!--
-      Filtros de genero:
-      N + numero + M = Produto Masculino (ex: N1M)
-      N + numero + F = Produto Feminino  (ex: N2F)
-      Atributo HTML: data-genero="masculino" | data-genero="feminino"
-    -->
-    <div class="cli-filtros" id="cli-filtros">
-      <button class="cli-filtro cli-filtro--ativo" data-filtro="todos">Todos</button>
-      <button class="cli-filtro" data-filtro="feminino">Femininos</button>
-      <button class="cli-filtro" data-filtro="masculino">Masculinos</button>
-    </div>
+  <!-- Tudo abaixo é montado pelo js/catalogo.js a partir do arquivo da campanha. Não edite cards aqui. -->
+  <div id="cli-app">
+    <header class="cli-capa">
+      <h1 class="cli-marca-loja">Esdra Cosméticos</h1>
+      <div class="cli-tagline">Kits de presente</div>
+    </header>
+    <noscript>
+      <section class="cli-neutro">
+        <h2>Kits de presente da Esdra</h2>
+        <p>Veja a loja online ou fale com a Esdra no WhatsApp.</p>
+        <div class="cli-neutro-acoes">
+          <a class="cli-btn cli-btn--loja" href="https://www.esdracosmeticos.com.br">Ver a loja online</a>
+          <a class="cli-btn" href="https://wa.me/5518991459429">Falar no WhatsApp</a>
+        </div>
+      </section>
+    </noscript>
   </div>
 
-  <main class="cli-grade" id="cli-grade">
-    
-      <article class="cli-card cli-card--maes " data-genero="masculino">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/kit-masculino-celebre-agora.jpg" alt="Kit Masculino Celebre Agora" loading="lazy"><div class="cli-num">N1M</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">O Boticário</div>
-          <h3 class="cli-nome">Kit Masculino Celebre Agora</h3>
-          <p class="cli-desc">Celebre Agora Desodorante Colônia 100ml + O Boticário MEN Creme Pré e Pós-Barba 150g. Embalagem especial para presente.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R$ 174,50</s>
-            <span class="cli-preco ">R$ 129,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">✓ Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2AKit%20Masculino%20Celebre%20Agora%2A%0APre%C3%A7o%3A%20R%24%20129%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-      <article class="cli-card cli-card--maes " data-genero="feminino">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/kit-kiss-me.jpg" alt="Kit Kiss Me" loading="lazy"><div class="cli-num">N2F</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">Eudora</div>
-          <h3 class="cli-nome">Kit Kiss Me</h3>
-          <p class="cli-desc">Kiss Me Now Desodorante Colônia 50ml + Kiss Me Lápis 3 em 1 Cherry 1,2g + Kiss Me Gloss Labial Cherry 5,5ml. Embalagem especial para presente.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R$ 144,90</s>
-            <span class="cli-preco ">R$ 134,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">✓ Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2AKit%20Kiss%20Me%2A%0APre%C3%A7o%3A%20R%24%20134%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-      <article class="cli-card cli-card--maes " data-genero="masculino">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/kit-biografia-masculino.jpg" alt="Kit Biografia Masculino" loading="lazy"><div class="cli-num">N3M</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">Natura</div>
-          <h3 class="cli-nome">Kit Biografia Masculino</h3>
-          <p class="cli-desc">Biografia Desodorante Colônia 100ml + Sabonete Líquido para o Corpo 100ml + Desodorante Corporal em Spray 100ml. Embalagem especial para presente.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R$ 304,80</s>
-            <span class="cli-preco ">R$ 209,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">✓ Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2AKit%20Biografia%20Masculino%2A%0APre%C3%A7o%3A%20R%24%20209%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-      <article class="cli-card cli-card--maes cli-card--esgotado" data-genero="feminino" data-esgotado="true">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/kit-nativa-spa-ameixa-negra.jpg" alt="Kit Nativa SPA Ameixa Negra" loading="lazy"><div class="cli-num">N4F</div><div class="cli-selo-esgotado">ESGOTADO</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">O Boticário</div>
-          <h3 class="cli-nome">Kit Nativa SPA Ameixa Negra</h3>
-          <p class="cli-desc">Nativa SPA Ameixa Negra Body Splash 200ml + Loção Hidratante Desodorante de Ameixa Negra 200ml. Embalagem especial para presente.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R$ 179,80</s>
-            <span class="cli-preco cli-preco--esgotado">R$ 145,90</span>
-          </div>
-          <span class="cli-status cli-status--esgotado">Esgotado</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2AKit%20Nativa%20SPA%20Ameixa%20Negra%2A%0APre%C3%A7o%3A%20R%24%20145%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-      <article class="cli-card cli-card--maes " data-genero="feminino">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/cesta-glamour-diva.jpg" alt="Cesta Glamour Diva" loading="lazy"><div class="cli-num">N5F</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">O Boticário</div>
-          <h3 class="cli-nome">Cesta Glamour Diva</h3>
-          <p class="cli-desc">Cesta decorada com caneca personalizada, pelúcia de coração, Perfume Glamour Diva e fio de fada decorativo.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R$ 252,90</s>
-            <span class="cli-preco ">R$ 139,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">✓ Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2ACesta%20Glamour%20Diva%2A%0APre%C3%A7o%3A%20R%24%20139%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-      <article class="cli-card cli-card--maes " data-genero="masculino">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/kit-club-6-eudora.jpg" alt="Kit Club 6 — Eudora" loading="lazy"><div class="cli-num">N6M</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">Eudora</div>
-          <h3 class="cli-nome">Kit Club 6 — Eudora</h3>
-          <p class="cli-desc">Colônia Club 6 Eudora 95ml + Body Spray Desodorante Club 6 Eudora 100ml. Embalagem especial para presente.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R$ 189,90</s>
-            <span class="cli-preco ">R$ 149,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">✓ Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2AKit%20Club%206%20%E2%80%94%20Eudora%2A%0APre%C3%A7o%3A%20R%24%20149%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-      <article class="cli-card cli-card--maes " data-genero="masculino">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/kit-club-6-eudora-2.jpg" alt="Kit Club 6 — Eudora" loading="lazy"><div class="cli-num">N7M</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">Eudora</div>
-          <h3 class="cli-nome">Kit Club 6 — Eudora</h3>
-          <p class="cli-desc">Body Spray Desodorante Club 6 Eudora 100ml + Loção Hidratante Desodorante Corporal Club 6 Eudora 200ml. Embalagem especial para presente.</p>
-          <div class="cli-precos">
-            <span class="cli-preco ">R$ 64,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">✓ Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2AKit%20Club%206%20%E2%80%94%20Eudora%2A%0APre%C3%A7o%3A%20R%24%2064%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-      <article class="cli-card cli-card--maes " data-genero="masculino">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/kit-egeo-bomb-black-o-boticario.jpg" alt="Kit Egeo Bomb Black — O Boticário" loading="lazy"><div class="cli-num">N8M</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">O Boticário</div>
-          <h3 class="cli-nome">Kit Egeo Bomb Black — O Boticário</h3>
-          <p class="cli-desc">Kit Egeo Bomb Black com Perfume 90ml e Shower Gel 2 em 1 Cabelo e Corpo 100g. Embalagem especial com sacola.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R$ 197,40</s>
-            <span class="cli-preco ">R$ 159,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">✓ Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2AKit%20Egeo%20Bomb%20Black%20%E2%80%94%20O%20Botic%C3%A1rio%2A%0APre%C3%A7o%3A%20R%24%20159%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-      <article class="cli-card cli-card--maes cli-card--esgotado" data-genero="masculino" data-esgotado="true">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/kit-arbo-o-boticario.jpg" alt="Kit Arbo — O Boticário" loading="lazy"><div class="cli-num">N9M</div><div class="cli-selo-esgotado">ESGOTADO</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">O Boticário</div>
-          <h3 class="cli-nome">Kit Arbo — O Boticário</h3>
-          <p class="cli-desc">Kit Arbo com Perfume 100ml, Body Spray 100ml e Loção Hidratante 75ml. Embalagem especial para presente.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R$ 279,90</s>
-            <span class="cli-preco cli-preco--esgotado">R$ 199,90</span>
-          </div>
-          <span class="cli-status cli-status--esgotado">Esgotado</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2AKit%20Arbo%20%E2%80%94%20O%20Botic%C3%A1rio%2A%0APre%C3%A7o%3A%20R%24%20199%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-      <article class="cli-card cli-card--maes " data-genero="feminino">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/kit-flor-de-carambola.jpg" alt="Kit Flor de Carambola" loading="lazy"><div class="cli-num">N10F</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">L&#x27;Occitane au Brésil</div>
-          <h3 class="cli-nome">Kit Flor de Carambola</h3>
-          <p class="cli-desc">Perfume Flor de Carambola 100ml + Sabonete Perfumado 75g + Grageado Crocante Cacau Show 70g. Caixa presenteável premium.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R$ 244,90</s>
-            <span class="cli-preco ">R$ 179,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">✓ Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2AKit%20Flor%20de%20Carambola%2A%0APre%C3%A7o%3A%20R%24%20179%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-      <article class="cli-card cli-card--maes " data-genero="feminino">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/caixa-presente-eudora-instance-maracuja.jpg" alt="Caixa Presente Eudora Instance Maracujá" loading="lazy"><div class="cli-num">N11F</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">Eudora</div>
-          <h3 class="cli-nome">Caixa Presente Eudora Instance Maracujá</h3>
-          <p class="cli-desc">Caixa presenteável com Hidratante Maracujá 180ml, Body Splash 200ml, Hidratante Maracujá e Waffle Trento de mousse de maracujá.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R$ 144,90</s>
-            <span class="cli-preco ">R$ 99,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">✓ Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2ACaixa%20Presente%20Eudora%20Instance%20Maracuj%C3%A1%2A%0APre%C3%A7o%3A%20R%24%2099%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-      <article class="cli-card cli-card--maes " data-genero="feminino">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/kit-rebeca-abravanel-jequiti.jpg" alt="Kit Rebeca Abravanel — Jequiti" loading="lazy"><div class="cli-num">N12F</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">Jequiti</div>
-          <h3 class="cli-nome">Kit Rebeca Abravanel — Jequiti</h3>
-          <p class="cli-desc">Perfume Rebeca Abravanel Jequiti 25ml + Sabonete Jequiti 70g. Embalagem especial em formato de coração para presentear.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R$ 99,90</s>
-            <span class="cli-preco ">R$ 54,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">✓ Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2AKit%20Rebeca%20Abravanel%20%E2%80%94%20Jequiti%2A%0APre%C3%A7o%3A%20R%24%2054%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-      <article class="cli-card cli-card--maes " data-genero="feminino">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/cesta-linda-irresistivel.jpg" alt="Cesta Linda Irresistível" loading="lazy"><div class="cli-num">N13F</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">O Boticário</div>
-          <h3 class="cli-nome">Cesta Linda Irresistível</h3>
-          <p class="cli-desc">Urso do Stitch, caixa de chocolate Cacau Show 200g com 15 bombons, Perfume Linda Irresistível 100ml O Boticário, rímel Eudora Turbo Volumasso e kit de presilha com 3 presilhas (1 grande e 2 pequenas). Cesta decorada com fios de fada, embalada em saco celofane.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R$ 384,90</s>
-            <span class="cli-preco ">R$ 309,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">✓ Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2ACesta%20Linda%20Irresist%C3%ADvel%2A%0APre%C3%A7o%3A%20R%24%20309%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-      <article class="cli-card cli-card--maes " data-genero="masculino">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/cesta-arbo-sprite-o-boticario.jpg" alt="Cesta Arbo + Sprite — O Boticário" loading="lazy"><div class="cli-num">N14M</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">O Boticário</div>
-          <h3 class="cli-nome">Cesta Arbo + Sprite — O Boticário</h3>
-          <p class="cli-desc">Perfume Arbo 100ml, lata de Sprite Zero 350ml e BYTES Pipoca grajeada coberta com chocolate da Cacau Show 50g. Vai embalada no saco celofane.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R$ 229,90</s>
-            <span class="cli-preco ">R$ 179,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">✓ Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2ACesta%20Arbo%20%2B%20Sprite%20%E2%80%94%20O%20Botic%C3%A1rio%2A%0APre%C3%A7o%3A%20R%24%20179%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-      <article class="cli-card cli-card--maes " data-genero="feminino">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/caixa-floratta-red-passion-o-boticario.jpg" alt="Caixa Floratta Red Passion — O Boticário" loading="lazy"><div class="cli-num">N15F</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">O Boticário</div>
-          <h3 class="cli-nome">Caixa Floratta Red Passion — O Boticário</h3>
-          <p class="cli-desc">Tablet de chocolate Te Amo Cacau Show 40g, urso de pelúcia, Perfume Floratta Red Passion 75ml, tablete de Kit Kat 11,6g, balão de coração e cachepô decorado.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R$ 299,90</s>
-            <span class="cli-preco ">R$ 254,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">✓ Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2ACaixa%20Floratta%20Red%20Passion%20%E2%80%94%20O%20Botic%C3%A1rio%2A%0APre%C3%A7o%3A%20R%24%20254%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-      <article class="cli-card cli-card--maes " data-genero="feminino">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/cesta-floratta-red-o-boticario.jpg" alt="Cesta Floratta Red — O Boticário" loading="lazy"><div class="cli-num">N16F</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">O Boticário</div>
-          <h3 class="cli-nome">Cesta Floratta Red — O Boticário</h3>
-          <p class="cli-desc">Urso de pelúcia, mini balão de coração, batata Pringles 104g, drageado crocante de chocolate da Cacau Show 70g, lata de Coca-Cola Zero 350ml e Perfume Floratta Red 100ml. Cesta decorada com fios de fada.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R$ 269,90</s>
-            <span class="cli-preco ">R$ 229,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">✓ Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2ACesta%20Floratta%20Red%20%E2%80%94%20O%20Botic%C3%A1rio%2A%0APre%C3%A7o%3A%20R%24%20229%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-      <article class="cli-card cli-card--maes " data-genero="feminino">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/caixa-egeo-choc-o-boticario.jpg" alt="Caixa Egeo Choc — O Boticário" loading="lazy"><div class="cli-num">N17F</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">O Boticário</div>
-          <h3 class="cli-nome">Caixa Egeo Choc — O Boticário</h3>
-          <p class="cli-desc">Cachepô decorado, balão de coração, urso do Stitch, barra Eu Te Amo Cacau Show 40g, gloss Niina Secrets, máscara para cílios Super Bond Niina Secrets, Perfume Egeo Choc 100ml e piranha de flor.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R$ 349,90</s>
-            <span class="cli-preco ">R$ 299,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">✓ Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2ACaixa%20Egeo%20Choc%20%E2%80%94%20O%20Botic%C3%A1rio%2A%0APre%C3%A7o%3A%20R%24%20299%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-      <article class="cli-card cli-card--maes " data-genero="feminino">
-        <div class="cli-selo">💕 Namorados</div>
-        
-        <div class="cli-foto"><img src="img/cesta-morango-irresistivel-eudora.jpg" alt="Cesta Morango Irresistível — Eudora" loading="lazy"><div class="cli-num">N18F</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">Eudora</div>
-          <h3 class="cli-nome">Cesta Morango Irresistível — Eudora</h3>
-          <p class="cli-desc">Cesta decorada com caneca exclusiva, pelúcia de coração, Hidratante Morango Irresistível 400ml, Body Splash Morango Irresistível 200ml e fios de fada.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R$ 189,90</s>
-            <span class="cli-preco ">R$ 154,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">✓ Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2ACesta%20Morango%20Irresist%C3%ADvel%20%E2%80%94%20Eudora%2A%0APre%C3%A7o%3A%20R%24%20154%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-
-
-      <!-- Kit Eudora Pulse Intense -->
-      <article class="cli-card cli-card--maes " data-genero="feminino">
-        <div class="cli-selo">&#128149; Namorados</div>
-        <div class="cli-foto"><img src="img/kit-eudora-pulse-intense.jpg" alt="Kit Eudora Pulse Intense" loading="lazy"><div class="cli-num">N19F</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">Eudora</div>
-          <h3 class="cli-nome">Kit Eudora Pulse Intense</h3>
-          <p class="cli-desc">Perfume Pulse Intense 100ml com fragr&#226;ncia marcante e Shower Gel 3 em 1 de 100g. O presente que traduz sentimentos e deixa marcante cada momento.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R&#36; 119,89</s>
-            <span class="cli-preco ">R&#36; 99,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">&#9989; Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2AKit%20Eudora%20Pulse%20Intense%2A%0APre%C3%A7o%3A%20R%24%2099%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <!-- Kit Malbec -->
-      <article class="cli-card cli-card--maes " data-genero="masculino">
-        <div class="cli-selo">&#128149; Namorados</div>
-        <div class="cli-foto"><img src="img/kit-malbec.jpg" alt="Kit Malbec" loading="lazy"><div class="cli-num">N20M</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">O Botic&#225;rio</div>
-          <h3 class="cli-nome">Kit Malbec</h3>
-          <p class="cli-desc">Col&#244;nia Malbec 100ml com fragr&#226;ncia sofisticada e inconfund&#237;vel, acompanhada de caixa de sabonete em barra perfumado Malbec com 2 unidades de 90g cada.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R&#36; 241,80</s>
-            <span class="cli-preco ">R&#36; 219,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">&#9989; Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2AKit%20Malbec%2A%0APre%C3%A7o%3A%20R%24%20219%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <!-- Kit Clash -->
-      <article class="cli-card cli-card--maes " data-genero="masculino">
-        <div class="cli-selo">&#128149; Namorados</div>
-        <div class="cli-foto"><img src="img/kit-clash.jpg" alt="Kit Clash" loading="lazy"><div class="cli-num">N21M</div></div>
-        <div class="cli-info">
-          <div class="cli-marca">O Botic&#225;rio</div>
-          <h3 class="cli-nome">Kit Clash</h3>
-          <p class="cli-desc">Body Spray Clash 100ml, Creme Pr&#233; e P&#243;s-Barba 50g e caixa de sabonete em barra Clash com 2 unidades de 80g cada. Um presente marcante para celebrar o amor.</p>
-          <div class="cli-precos">
-            <s class="cli-preco-cheio">R&#36; 145,70</s>
-            <span class="cli-preco ">R&#36; 109,90</span>
-          </div>
-          <span class="cli-status cli-status--pronta">&#9989; Pronta entrega</span>
-          <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Tenho%20interesse%20no%20produto%3A%20%2AKit%20Clash%2A%0APre%C3%A7o%3A%20R%24%20109%2C90%0A%E2%9C%85%20Pronta%20entrega%0A%0APode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener" class="cli-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Pedir no WhatsApp
-          </a>
-        </div>
-      </article>
-
-    <div id="cli-vazio" class="cli-vazio" style="display:none">Nenhum produto encontrado para esta busca.</div>
-  </main>
-
-  <footer class="cli-rodape">
-    <h2>Encontrou o que procurava?</h2>
-    <p>Clique no produto que quiser e fale direto comigo no WhatsApp.</p>
-    <a href="https://wa.me/5518991459429?text=Ol%C3%A1%20Esdra%21%20Vi%20seu%20cat%C3%A1logo%20e%20gostaria%20de%20saber%20mais." target="_blank" class="cli-rodape-btn">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Falar com a Esdra
-    </a>
-    <div class="cli-rodape-meta">Esdra Cosméticos · Catálogo atualizado em 10/06/2026</div>
-  </footer>
-
-<script>
-(function(){
-  /*
-   * N + numero + M = Produto Masculino (ex: N1M)
-   * N + numero + F = Produto Feminino  (ex: N2F)
-   * data-genero="masculino" | data-genero="feminino"
-   */
-  var busca = document.getElementById('cli-busca');
-  var cards = document.querySelectorAll('.cli-card');
-  var vazio = document.getElementById('cli-vazio');
-  var filtros = document.querySelectorAll('.cli-filtro');
-  var filtroAtivo = 'todos';
-
-  // Produtos esgotados sempre aparecem no fim da grade
-  var grade = document.getElementById('cli-grade');
-  cards.forEach(function(c) {
-    if (c.classList.contains('cli-card--esgotado')) grade.appendChild(c);
-  });
-
-
-  function filtrar() {
-    var t = busca.value.trim().toLowerCase();
-    var v = 0;
-    cards.forEach(function(c) {
-      var genero = c.getAttribute('data-genero');
-      var txt = c.textContent.toLowerCase();
-      var passaFiltro = filtroAtivo === 'todos' || genero === filtroAtivo;
-      var passaBusca = !t || txt.includes(t);
-      var mostra = passaFiltro && passaBusca;
-      c.classList.toggle('oculto', !mostra);
-      if (mostra) v++;
-    });
-    if (vazio) vazio.style.display = v === 0 ? 'block' : 'none';
-  }
-
-  busca.addEventListener('input', filtrar);
-
-  filtros.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      filtros.forEach(function(b) { b.classList.remove('cli-filtro--ativo'); });
-      btn.classList.add('cli-filtro--ativo');
-      filtroAtivo = btn.getAttribute('data-filtro');
-      filtrar();
-    });
-  });
-})();
-</script>
+  <!-- Campanha publicada: campanhas/atual.js. Prévia de outra: index.html?campanha=NOME-DO-ARQUIVO -->
+  <script src="campanhas/atual.js"></script>
+  <script src="js/catalogo.js"></script>
 </body>
 </html>
