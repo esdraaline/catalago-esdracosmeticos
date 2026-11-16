@@ -15,7 +15,7 @@ status:
   health: unknown
   phase: null
   priority: null
-  updated_at: 2026-09-16T06:58:57-03:00
+  updated_at: 2026-11-14T14:46:17-03:00
   last_session_at: null
   confidence: inferred
 focus:
@@ -23,7 +23,19 @@ focus:
   current: null
   last_completed: null
   recommended_next_action: null
-next_actions: []
+next_actions:
+  - id: act-001
+    title: Apontar esdracosmeticos.com.br para o catalogo (GitHub Pages + DNS Registro.br), incluir redes sociais e ligar renovacao automatica (vence 19/03/2027) (migrada de loja-dos-sonhos act-048)
+    status: pending
+    impact: null
+    urgency: null
+    effort: null
+    due_date: null
+    unblocks: []
+    blocked_by: []
+    created_at: 2026-11-14T14:46:17-03:00
+    done_at: null
+    note: null
 blockers: []
 decisions_recent: []
 milestones: []
