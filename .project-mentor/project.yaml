@@ -4,7 +4,7 @@ project:
   id: c9da197c-38b7-4f0b-a45f-778f35701a21
   slug: catalago-esdracosmeticos
   name: Catálogo — Esdra Cosméticos
-  summary: "> **Organização Esdra — 09/09/2026:** [entrada do negócio](../central-ec/README.md) e [responsabilidades dos sistemas](../central-ec/DECISOES.md). Papel deste repositório: Catálogo de campanhas. Seu c"
+  summary: "> **Organização Esdra — 09/09/2026:** [entrada do negócio](../README.md) e [responsabilidades dos sistemas](../DECISOES.md). Papel deste repositório: Catálogo de campanhas. Seu c"
   category: negocio
   sensitivity: normal
   repo_url: https://github.com/esdraaline/catalago-esdracosmeticos.git

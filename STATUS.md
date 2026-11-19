@@ -1,6 +1,6 @@
 # Status: Catálogo — Esdra Cosméticos
 
-> **Organização Esdra — 09/09/2026:** [entrada do negócio](../central-ec/README.md) e [responsabilidades dos sistemas](../central-ec/DECISOES.md). Papel deste repositório: Catálogo de campanhas. Seu c
+> **Organização Esdra — 09/09/2026:** [entrada do negócio](../README.md) e [responsabilidades dos sistemas](../DECISOES.md). Papel deste repositório: Catálogo de campanhas. Seu c
 
 ## Pendências herdadas do Mentor de Projetos (importadas em 16/11/2026)
 
