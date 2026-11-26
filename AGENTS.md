@@ -1,3 +1,6 @@
+> Este repositório é público e cuida só do código de publicação. Assuntos operacionais,
+> pendências e decisões internas são tratados no espaço de trabalho privado.
+
 ## Contexto do projeto
 - Catálogo de campanhas da Esdra Cosméticos (kits de presente enviados pelo WhatsApp), HTML+CSS+JS puro, sem build, no GitHub Pages: https://esdraaline.github.io/catalago-esdracosmeticos/
 - Repositório PÚBLICO (conta esdraaline). Nada de planilha, foto bruta ou dado de cliente.
